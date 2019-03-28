@@ -1,1 +1,1 @@
-# lab2_itp
+# Laboratório 2 - Linguagem de Programação 1
