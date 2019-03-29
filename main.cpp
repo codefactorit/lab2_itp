@@ -36,6 +36,21 @@ void main()
 
 		V_Empresas.push_back(Empresa(cnpj, nome_empresa));
 	}
+	else if (opcao == 2)	
+	{
+		string nome_func;
+		cout<<"Digite o nome do novo funcionario: "<<endl;
+		getline(cin,nome_func);
+		if (busca_funcionario(V_Empresas, nome_func) == true)
+		{
+
+		}
+
+
+
+
+		cout<<endl;
+	}	
 
 
 

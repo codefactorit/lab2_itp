@@ -11,6 +11,8 @@ class Funcionario
 	public:
 	string nome;
 
+	busca_funcionario(vector<Funcionario> lista_func);
+
 	class Data_admissao
 	{
 		public:
