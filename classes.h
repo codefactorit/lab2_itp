@@ -5,11 +5,10 @@
 using namespace std;
 
 class Funcionario
-{
-	double salario;
-
+{	
 	public:
 	string nome;
+	double salario;
 
 	class Data_admissao
 	{
@@ -20,11 +19,11 @@ class Funcionario
 
 class Empresa
 {
+	public:
 	long int cnpj;
 	vector<Funcionario> V_Funcionarios;
-
-	public:
 	string nome;
 
 	Empresa(long int cnpj, string nome);
+	void aumento(double porcentagem_aumento);
 };

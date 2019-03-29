@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
-#include <algorithm>
+#include <algorithm>		
 #include <vector>
 #include <string>
 
 class Pessoa {
+public:
     string nome;
     int idade;
     public:
@@ -47,5 +48,16 @@ int main(){
 			cout<<" Idade: "<<teste[i].getIdade()<<endl;
 		}
 			w++;
+		}
+
+		for (int i = 0; i < teste.size(); ++i){
+
+		teste[i].idade*= 2; 
+		}
+
+		for(int i=0; i<teste.size(); ++i)
+		{
+			cout<<"Nome: "<<teste[i].getNome()<<endl;
+			cout<<" Idade: "<<teste[i].getIdade()<<endl;
 		}
 }

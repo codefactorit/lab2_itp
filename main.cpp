@@ -5,6 +5,7 @@ void main()
 {
 
 	vector<Empresa> V_Empresas;
+
 	int opcao = 0;
 
 	cout<<"1. Para adicionar uma empresa"<<endl;
