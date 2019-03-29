@@ -6,15 +6,17 @@ using namespace std;
 
 class Funcionario
 {	
-	public:
-	string nome;
 	double salario;
 
-	class Data_admissao
-	{
-		public:
-		int dia, mes, ano;
-	};
+	public:
+	string nome;
+	int data_admissao[3];
+
+	Funcionario(string c_nome, double c_salario, int* c_data_admissao);
+	double getSalario();
+	void setSalario(double novo_salario);
+
+
 };
 
 class Empresa
