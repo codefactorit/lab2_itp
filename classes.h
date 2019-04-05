@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <ostream>
 
 using namespace std;
 
@@ -26,6 +27,10 @@ class Empresa
 	vector<Funcionario> V_Funcionarios;
 	string nome;
 
-	Empresa(long int cnpj, string nome);
+	Empresa(long int cnpj, string nome);	
 	void aumento(double porcentagem_aumento);
+	static int total_empresas;
+	static int total_funcionarios;
+	static media_funcionarios(int total_empresas, int total_funcionarios);
+	friend ostream& operator<< (ostream &o, Empresa const a);
 };

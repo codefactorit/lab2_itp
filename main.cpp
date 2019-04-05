@@ -1,9 +1,10 @@
 #include "classes.h"
 
+int Empresa::total_empresas = 0;
+int Empresa::total_funcionarios = 0;
 
 void main()
 {
-
 	vector<Empresa> V_Empresas;
 
 	int opcao = 0;
@@ -36,6 +37,8 @@ void main()
 		cout<<endl;
 
 		V_Empresas.push_back(Empresa(cnpj, nome_empresa));
+
+
 	}
 
 
